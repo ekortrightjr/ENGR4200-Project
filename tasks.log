@@ -1,0 +1,11 @@
+- Assembled and tested MicroROS robot
+  + Robot has ros2 / nav2 installed
+  + Rpi5
+  + ESP32-based controller board
+  + 2DOF camera
+  + ORBBEC MS200 ToF LiDAR
+
+- Extracted urdf file for simulation with Gazebo
+
+- Installed nav2 on laptop unbuntu to support simulation and prototyping
+
