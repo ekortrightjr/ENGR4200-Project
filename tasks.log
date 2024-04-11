@@ -38,3 +38,5 @@ sudo apt install ros-humble-tf-transformations
 
 - Brainstormed stretch goals, including 
   + asynchronously pre-empting routine patrol behavior and directing the vehicle to assist at a specified location.
+  + gracefully exiting patrol to go to charging station and recharging battery
+  + kill switch activated by building or human
