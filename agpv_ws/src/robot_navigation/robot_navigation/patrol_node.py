@@ -7,6 +7,7 @@ class PatrolNode(Node):
         # Initialize your components here
 
     def patrol(self, waypoints):
+        # defined using a Moore-style state machine
         for waypoint in waypoints:
             # Navigate to waypoint using simple-commander
             self.get_logger().info(f'Navigating to waypoint {waypoint}')
