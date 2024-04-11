@@ -9,3 +9,17 @@
 
 - Installed nav2 on laptop unbuntu to support simulation and prototyping
 
+- Fixed nav2 issues dds
+
+- Tested navigation through waypoints
+
+- Navigation through poses was determined to be unstable and not unstable
+
+- Installed the simple_commander API
+
+- Added ROS extensions to VSC
+
+- Installed tf-transformations and transforms3d (to convert Euler angle to quaternion)
+sudo apt install ros-humble-tf-transformations
+
+
