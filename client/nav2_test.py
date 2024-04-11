@@ -36,11 +36,11 @@ def main():
     # wait for task to be completed
     while not nav.isTaskComplete():
         feedback = nav.getFeedback()
-        # print(feedback)
+        print(feedback)
 
     waypoints = [
         get_pose_stampted(nav, {"x": 3.5, "y": 2.0}, 3.14),
-        get_pose_stampted(nav, {"x": 0.0, "y": 2.0}, -1.57),
+        get_pose_stampted(nav, {"x": 0.0, "y": 2.0}, 4.71),
         get_pose_stampted(nav, {"x": 0.0, "y": 0.0}, 0.0)
     ]
 
@@ -49,7 +49,7 @@ def main():
     # wait for task to be completed
     while not nav.isTaskComplete():
         feedback = nav.getFeedback()
-        # print(feedback)
+        print(feedback)
 
     print(nav.getResult())
 
