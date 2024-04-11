@@ -27,3 +27,14 @@ sudo apt install ros-humble-tf-transformations
 
 - Created robot_navigation package and a skeleton of the nav2_node that implements navigation
 
+- Added skeletons for:
+  + nav2 node which will wrap simple commander and implement high-level application behaviors such as "go back to base"
+  + patrol node which implements routine patrol behavior and yields control to sub-behaviors such as obstacle avoidance or traffic signal obeying
+  + obstacle avoidance node which subscribes to LiDAR (or the camera) to detect close obstacles and uses simple commander to implement obstacle avoidance logic
+  + traffic light recognition which listens to the camera, processes its images, detects signals, and uses simple commander to obey them
+
+- Working on building a physical world for the patrol vehicle
+  + working on a Gazebo model for simulation
+
+- Brainstormed stretch goals, including 
+  + asynchronously pre-empting routine patrol behavior and directing the vehicle to assist at a specified location.
