@@ -22,4 +22,6 @@
 - Installed tf-transformations and transforms3d (to convert Euler angle to quaternion)
 sudo apt install ros-humble-tf-transformations
 
+- Tested nav2 navigation with simple commander, getting feedback throughout the navigation, and getting results at the end
+  + Important for monitoring the robot and determining whether it is navigating correctly
 
