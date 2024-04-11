@@ -2,9 +2,7 @@ robot_navigation package
 - node: nav2_node
   This node will provide the core navigation functionalities using the nav2 stack and simple commander, to move the robot to a goal or through a set of waypoints
 
-- action: NavigateToPose
+- simple-commander API functions used: BasicNavigator(), setInitialPose(), waitUntilNav2Active(), goToPose(), isTaskComplete(), getFeedback(), followWaypoints(), getResult()
 
-- service: GetRobotPose
-
-
+- built and tested simple prototype using turtlebot3
 

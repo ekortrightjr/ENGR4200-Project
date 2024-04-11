@@ -25,3 +25,5 @@ sudo apt install ros-humble-tf-transformations
 - Tested nav2 navigation with the simple commander Python API, getting feedback throughout the navigation, and getting results at the end
   + Important for monitoring the robot and determining whether it is navigating correctly
 
+- Created robot_navigation package and a skeleton of the nav2_node that implements navigation
+
