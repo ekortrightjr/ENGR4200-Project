@@ -4,15 +4,17 @@ from rclpy.node import Node
 class PatrolNode(Node):
     def __init__(self):
         super().__init__('patrol_node')
-        # Initialize your components here
 
     def patrol(self, waypoints):
+        # Patrol behavior
         # defined using a Moore-style state machine
+        # if state == "Patrol" perform routine patrol, otherwise yield control to other state machines
+        # including obstacle avoidance and traffic light detection behaviors
         for waypoint in waypoints:
             # Navigate to waypoint using simple-commander
             self.get_logger().info(f'Navigating to waypoint {waypoint}')
 
-            # Check station health
+            # Check station health (service)
             self.get_logger().info('Checking station health')
             # Use your health_check_node's CheckStationHealth service here
 
@@ -20,7 +22,7 @@ class PatrolNode(Node):
             self.get_logger().info('Logging visit')
             # Use your logging_node's LogVisit service here
 
-            # Report unhealthy station
+            # Report unhealthy station (service)
             self.get_logger().info('Reporting unhealthy station')
             # Use your report_node's ReportUnhealthyStation service here
 
