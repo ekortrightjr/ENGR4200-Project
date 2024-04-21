@@ -37,3 +37,108 @@ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ## in term 2
 cd ~/maps
 ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=my_map.yaml
+
+### PHYSICAL ROBOT
+# Not sure this is needed
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+sudo apt install ros-humble-rmw-cyclonedds-cpp
+sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup
+sudo apt install ros-humble-slam-toolbox
+
+To create map of physical world:
+ros2 launch yahboomcar_bringup yahboomcar_bringup_launch.py&
+ros2 launch yahboomcar_nav display_launch.py&
+ros2 launch yahboomcar_nav map_gmapping_launch.py&
+ros2 launch yahboomcar_nav save_map_launch.py
+cp /root/yahboomcar_ws/src/yahboomcar_nav/maps/yahboom_map.* /root/share
+
+In a separate terminal, I am able to see the topic /scan
+publishing a message of type sensor_msgs/msg/LaserScan
+
+To navigate:
+cp /root/share/yahboom_map.* /root/yahboomcar_ws/src/yahboomcar_nav/maps
+ros2 launch yahboomcar_bringup yahboomcar_bringup_launch.py&
+ros2 launch yahboomcar_nav display_launch.py > /dev/null 2>&1 &
+ros2 launch yahboomcar_nav navigation_dwb_launch.py > /dev/null 2>&1 > /dev/null 2>&1 &
+python3 /root/share/client/nav2_test.py
+
+# Starting pose
+header:
+  stamp:
+    sec: 1713229180
+    nanosec: 777548578
+  frame_id: map
+pose:
+  pose:
+    position:
+      x: 0.14
+      y: -0.30
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.74
+      w: 0.67
+  covariance:
+  - 0.25
+
+initial_pose = get_pose_stampted(nav=nav, p={"x": 0.14, "y": -0.30}, a=1.67)
+
+# Station poses
+header:
+  stamp:
+    sec: 1713229704
+    nanosec: 224834893
+  frame_id: map
+pose:
+  pose:
+    position:
+      x: 0.5958046317100525
+      y: 0.8170405030250549
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.7163309456830617
+      w: 0.6977606869527765
+
+
+pose1 = get_pose_stampted(nav=nav, p={"x": 0.6, "y": 0.82}, a=1.6)
+
+header:
+  stamp:
+    sec: 1713229970
+    nanosec: 640904993
+  frame_id: map
+pose:
+  pose:
+    position:
+      x: -0.20390009880065918
+      y: 1.333770513534546
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: -0.9925783995950158
+      w: 0.1216064170074801
+
+pose2 = get_pose_stampted(nav=nav, p={"x": -0.2, "y": 1.33}, a=2.9)
+
+header:
+  stamp:
+    sec: 1713230108
+    nanosec: 345944819
+  frame_id: map
+pose:
+  pose:
+    position:
+      x: -0.7925538420677185
+      y: -0.9354615807533264
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.13717201306401505
+      w: 0.9905472421000251
+
+pose2 = get_pose_stampted(nav=nav, p={"x": -0.79, "y": -0.94}, a=2.8)

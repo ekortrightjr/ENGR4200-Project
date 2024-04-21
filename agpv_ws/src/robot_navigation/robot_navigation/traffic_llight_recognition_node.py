@@ -1,3 +1,5 @@
+# This node uses the camera to recognize and interpret traffic signals
+# and works with nav2_node to obey them.
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image

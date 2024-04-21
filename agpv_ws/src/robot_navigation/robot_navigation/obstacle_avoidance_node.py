@@ -1,3 +1,5 @@
+# This node will use LiDAR data to detect an obstacle
+# and will use nav2_node to navigate around it
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan

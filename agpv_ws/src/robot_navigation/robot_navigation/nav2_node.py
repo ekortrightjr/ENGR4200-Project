@@ -1,5 +1,8 @@
 # potentially used to encapsulate Simple Commander and implement high-level patrol vehicle behaviors
-# SC can go-to-pose, but we might want to put the go-back-to-base logic here so it can be called by the patrol node
+# Simpe Commander can go-to-pose, but we plan to use this node for higher-level functions, including
+# goToStation(), goToBase(), goAroundObstacle(), etc.
+#
+# 
 import rclpy
 from rclpy.node import Node
 from simple_commander import Commander

@@ -1,3 +1,9 @@
+# This is the main controller node
+# See the state diagram for a detailed behavior
+# it runs a routine patrol unless pre-empted by an obstacle or the need to obey a traffic signal
+# patrolling involves checking the health of the stations visited, logging the visit, and notifying if the station has an issue
+# at the end of the patrol it should return to base
+# It uses nav2_node to navigate to stations and return to base
 import rclpy
 from rclpy.node import Node
 

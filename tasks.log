@@ -36,6 +36,10 @@ sudo apt install ros-humble-tf-transformations
 - Working on building a physical world for the patrol vehicle
   + working on a Gazebo model for simulation
 
+- Built a small physical world in my garage
+  + Successfully built a map and saved it
+  + Tested navigation with simple commander with physical robot
+  
 - Brainstormed stretch goals, including 
   + asynchronously pre-empting routine patrol behavior and directing the vehicle to assist at a specified location.
   + gracefully exiting patrol to go to charging station and recharging battery
