@@ -46,21 +46,33 @@ sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup
 sudo apt install ros-humble-slam-toolbox
 
 To create map of physical world:
+# Connect to Micro-ROS WiFi on laptop
+# Connect to Raspberry Pi with VNC viewer (10.42.0.1)
+# Ctrl-D to get out of docker
+sh ros2_humble_mnt.sh 
 ros2 launch yahboomcar_bringup yahboomcar_bringup_launch.py&
-ros2 launch yahboomcar_nav display_launch.py&
-ros2 launch yahboomcar_nav map_gmapping_launch.py&
+ros2 launch yahboomcar_nav display_launch.py > /dev/null 2>&1 &
+ros2 launch yahboomcar_nav map_gmapping_launch.py > /dev/null 2>&1 &
 ros2 launch yahboomcar_nav save_map_launch.py
+# copy the generated map to permanent storage
 cp /root/yahboomcar_ws/src/yahboomcar_nav/maps/yahboom_map.* /root/share
 
 In a separate terminal, I am able to see the topic /scan
 publishing a message of type sensor_msgs/msg/LaserScan
 
 To navigate:
+# copy the permanent map
+sh ros2_humble_mnt.sh
 cp /root/share/yahboom_map.* /root/yahboomcar_ws/src/yahboomcar_nav/maps
-ros2 launch yahboomcar_bringup yahboomcar_bringup_launch.py&
+cp /root/share/params/dwb_nav_params.yaml /root/yahboomcar_ws/src/yahboomcar_nav/params
+ros2 launch yahboomcar_bringup yahboomcar_bringup_launch.py &
 ros2 launch yahboomcar_nav display_launch.py > /dev/null 2>&1 &
-ros2 launch yahboomcar_nav navigation_dwb_launch.py > /dev/null 2>&1 > /dev/null 2>&1 &
+ros2 launch yahboomcar_nav navigation_dwb_launch.py > /dev/null 2>&1 &
+# run the test program (patrol prototype)
 python3 /root/share/client/nav2_test.py
+
+# to read an initial pose from rviz, listen to the topic first:
+ros2 topic echo /initialpose
 
 # Starting pose
 header:
@@ -69,18 +81,23 @@ header:
     nanosec: 777548578
   frame_id: map
 pose:
-  pose:
-    position:
-      x: 0.14
-      y: -0.30
+  position:
+      x: -0.0008144131279550493
+      y: -0.024764008820056915
       z: 0.0
     orientation:
       x: 0.0
       y: 0.0
-      z: 0.74
-      w: 0.67
+      z: 0.005559764274313971
+      w: 0.9999845443911691
+
+angular z = 0.02
+
   covariance:
   - 0.25
+
+# update initial pose (and other poses)
+vi /root/share/client/nav2_test.py
 
 initial_pose = get_pose_stampted(nav=nav, p={"x": 0.14, "y": -0.30}, a=1.67)
 
