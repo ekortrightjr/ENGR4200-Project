@@ -75,6 +75,19 @@ python3 /root/share/client/nav2_test.py
 ros2 topic echo /initialpose
 
 # Starting pose
+ose:
+  pose:
+    position:
+      x: 0.8453111052513123
+      y: 0.9655082821846008
+      z: 0.0
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.8051001187739585
+      w: 0.5931389371388106
+
+      
 header:
   stamp:
     sec: 1713229180
