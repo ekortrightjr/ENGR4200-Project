@@ -1,3 +1,9 @@
+# To move robot from the command line
+ros2 topic pub --once /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.2, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"
+
+# To stop robot
+ros2 topic pub --once /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"
+
 # TO launch the world:
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 
@@ -49,6 +55,7 @@ To create map of physical world:
 # Connect to Micro-ROS WiFi on laptop
 # Connect to Raspberry Pi with VNC viewer (10.42.0.1)
 # Ctrl-D to get out of docker
+# Open a new raspberry terminal
 sh ros2_humble_mnt.sh 
 ros2 launch yahboomcar_bringup yahboomcar_bringup_launch.py&
 ros2 launch yahboomcar_nav display_launch.py > /dev/null 2>&1 &
@@ -64,7 +71,7 @@ To navigate:
 # copy the permanent map
 sh ros2_humble_mnt.sh
 cp /root/share/yahboom_map.* /root/yahboomcar_ws/src/yahboomcar_nav/maps
-cp /root/share/params/dwb_nav_params.yaml /root/yahboomcar_ws/src/yahboomcar_nav/params
+# DO NOT TRY THIS YET: cp /root/share/params/dwb_nav_params.yaml /root/yahboomcar_ws/src/yahboomcar_nav/params
 ros2 launch yahboomcar_bringup yahboomcar_bringup_launch.py &
 ros2 launch yahboomcar_nav display_launch.py > /dev/null 2>&1 &
 ros2 launch yahboomcar_nav navigation_dwb_launch.py > /dev/null 2>&1 &
@@ -87,7 +94,7 @@ ose:
       z: 0.8051001187739585
       w: 0.5931389371388106
 
-      
+
 header:
   stamp:
     sec: 1713229180
