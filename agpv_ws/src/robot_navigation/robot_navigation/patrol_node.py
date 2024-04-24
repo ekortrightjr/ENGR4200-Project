@@ -16,21 +16,18 @@ class PatrolNode(Node):
         # defined using a Moore-style state machine
         # if state == "Patrol" perform routine patrol, otherwise yield control to other state machines
         # including obstacle avoidance and traffic light detection behaviors
-        for waypoint in waypoints:
-            # Navigate to waypoint using simple-commander
+        while (station left to be visisted and state == "patrolling"):
+            # Navigate to station if no red traffic light (wait until traffic light not red)
             self.get_logger().info(f'Navigating to waypoint {waypoint}')
 
-            # Check station health (service)
+            # Check station health 
             self.get_logger().info('Checking station health')
-            # Use your health_check_node's CheckStationHealth service here
 
             # Log visit
             self.get_logger().info('Logging visit')
-            # Use your logging_node's LogVisit service here
 
-            # Report unhealthy station (service)
+            # Report unhealthy station
             self.get_logger().info('Reporting unhealthy station')
-            # Use your report_node's ReportUnhealthyStation service here
 
         # After all waypoints have been visited, return to base
         self.get_logger().info('Returning to base')
