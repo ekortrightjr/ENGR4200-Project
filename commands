@@ -73,10 +73,19 @@ sh ros2_humble_mnt.sh
 cp /root/share/yahboom_map.* /root/yahboomcar_ws/src/yahboomcar_nav/maps
 # DO NOT TRY THIS YET: cp /root/share/params/dwb_nav_params.yaml /root/yahboomcar_ws/src/yahboomcar_nav/params
 ros2 launch yahboomcar_bringup yahboomcar_bringup_launch.py &
-rqt > /dev/null 2>&1 &
+# rqt > /dev/null 2>&1 &
 ros2 launch yahboomcar_nav display_launch.py > /dev/null 2>&1 &
 ros2 launch yahboomcar_nav navigation_dwb_launch.py > /dev/null 2>&1 &
-# go to rqt and set inflation radius on global costmap
+# set navigation parameters
+ros2 param set /global_costmap/global_costmap inflation_layer.inflation_radius 0.15
+ros2 param set /local_costmap/local_costmap inflation_layer.inflation_radius 0.15
+ros2 param set /global_costmap/global_costmap width 3
+ros2 param set /local_costmap/local_costmap width 2
+
+# start the visual detection
+python3 /root/share/nodes/visual_detector.py &
+ros2 topic echo /station_status &
+
 # run the test program (patrol prototype)
 python3 /root/share/client/nav2_test.py
 

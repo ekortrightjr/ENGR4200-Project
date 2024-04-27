@@ -32,7 +32,7 @@ def main():
     nav = BasicNavigator()
 
     # create initial pose
-    initial_pose = get_pose_stampted(nav=nav, p={"x": -0.0321, "y": -0.0403}, a=0.0490)
+    initial_pose = get_pose_stampted(nav=nav, p={"x": -0.07, "y": -0.04}, a=0.3)
     nav.setInitialPose(initial_pose)
     
     # wait for mav2
@@ -40,7 +40,7 @@ def main():
     time.sleep(5)
 
     # # send a nav2 goal
-    goal_pose = get_pose_stampted(nav=nav, p={"x": 1.6089, "y": -0.4549}, a=-0.0494)
+    goal_pose = get_pose_stampted(nav=nav, p={"x": 1.12, "y": 0.55}, a=0.65)
     nav.goToPose(goal_pose)
 
     # wait for task to be completed
@@ -51,7 +51,7 @@ def main():
     print("On to second station!")
     time.sleep(10)
     # # send a nav2 goal
-    goal_pose = get_pose_stampted(nav=nav, p={"x": 1.3664, "y": 0.1324}, a=1.5419)
+    goal_pose = get_pose_stampted(nav=nav, p={"x": 0.93, "y": -0.09}, a=1.57)
     nav.goToPose(goal_pose)
 
     # wait for task to be completed
