@@ -84,7 +84,13 @@ ros2 param set /local_costmap/local_costmap width 2
 
 # start the visual detection
 python3 /root/share/nodes/visual_detector.py &
-ros2 topic echo /station_status &
+#ros2 topic echo /station_status &
+
+# start the alert handler
+python3 /root/share/nodes/alert_handler.py &
+
+# start the patrol node
+python3 /root/share/nodes/patrol_vehicle.py
 
 # run the test program (patrol prototype)
 python3 /root/share/client/nav2_test.py
