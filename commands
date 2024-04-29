@@ -76,7 +76,8 @@ ros2 launch yahboomcar_bringup yahboomcar_bringup_launch.py &
 # rqt > /dev/null 2>&1 &
 ros2 launch yahboomcar_nav display_launch.py > /dev/null 2>&1 &
 ros2 launch yahboomcar_nav navigation_dwb_launch.py > /dev/null 2>&1 &
-# set navigation parameters
+
+# set navigation parameters (may need to run the first one twice -- run them one at a time!)
 ros2 param set /global_costmap/global_costmap inflation_layer.inflation_radius 0.15
 ros2 param set /local_costmap/local_costmap inflation_layer.inflation_radius 0.15
 ros2 param set /global_costmap/global_costmap width 3
@@ -93,10 +94,11 @@ python3 /root/share/nodes/alert_handler.py &
 python3 /root/share/nodes/patrol_vehicle.py
 #### END ####
 
-# New ways of starting nodes:
+# New way of starting nodes:
+source /root/share/agpv_ws/install/setup.bash
 ros2 run agpv_navigation visual_detector &
 ros2 run agpv_navigation alert_handler &
-ros2 run agpv navigation patrol_vehicle
+ros2 run agpv_navigation patrol_vehicle
 
 
 
