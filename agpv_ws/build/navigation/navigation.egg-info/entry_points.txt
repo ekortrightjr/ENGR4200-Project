@@ -1,0 +1,5 @@
+[console_scripts]
+alert_handler = navigation.alert_handler:main
+patrol_vehicle = navigation.patrol_vehicle:main
+visual_detector = navigation.visual_detector:main
+

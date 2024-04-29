@@ -1,0 +1,18 @@
+[1.576s] Invoking command in '/root/share/agpv_ws/src/agpv_navigation': PYTHONPATH=/root/share/agpv_ws/build/agpv_navigation/prefix_override:/root/share/agpv_ws/install/agpv_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/agpv_navigation build --build-base /root/share/agpv_ws/build/agpv_navigation/build install --record /root/share/agpv_ws/build/agpv_navigation/install.log --single-version-externally-managed
+[1.923s] running egg_info
+[1.925s] writing ../../build/agpv_navigation/agpv_navigation.egg-info/PKG-INFO
+[1.931s] writing dependency_links to ../../build/agpv_navigation/agpv_navigation.egg-info/dependency_links.txt
+[1.932s] writing entry points to ../../build/agpv_navigation/agpv_navigation.egg-info/entry_points.txt
+[1.932s] writing requirements to ../../build/agpv_navigation/agpv_navigation.egg-info/requires.txt
+[1.933s] writing top-level names to ../../build/agpv_navigation/agpv_navigation.egg-info/top_level.txt
+[1.939s] reading manifest file '../../build/agpv_navigation/agpv_navigation.egg-info/SOURCES.txt'
+[1.941s] writing manifest file '../../build/agpv_navigation/agpv_navigation.egg-info/SOURCES.txt'
+[1.942s] running build
+[1.942s] running build_py
+[1.944s] running install
+[1.947s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.947s]   warnings.warn(
+[1.947s] running install_lib
+[1.950s] running install_data
+[1.952s] error: can't copy 'resource/agpv_navigation': doesn't exist or not a regular file
+[2.005s] Invoked command in '/root/share/agpv_ws/src/agpv_navigation' returned '1': PYTHONPATH=/root/share/agpv_ws/build/agpv_navigation/prefix_override:/root/share/agpv_ws/install/agpv_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/agpv_navigation build --build-base /root/share/agpv_ws/build/agpv_navigation/build install --record /root/share/agpv_ws/build/agpv_navigation/install.log --single-version-externally-managed

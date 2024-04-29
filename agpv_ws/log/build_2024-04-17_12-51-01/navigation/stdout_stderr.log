@@ -1,0 +1,45 @@
+running egg_info
+creating ../../build/navigation/navigation.egg-info
+writing ../../build/navigation/navigation.egg-info/PKG-INFO
+writing dependency_links to ../../build/navigation/navigation.egg-info/dependency_links.txt
+writing entry points to ../../build/navigation/navigation.egg-info/entry_points.txt
+writing requirements to ../../build/navigation/navigation.egg-info/requires.txt
+writing top-level names to ../../build/navigation/navigation.egg-info/top_level.txt
+writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+reading manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /root/share/agpv_ws/build/navigation/build
+creating /root/share/agpv_ws/build/navigation/build/lib
+creating /root/share/agpv_ws/build/navigation/build/lib/navigation
+copying navigation/__init__.py -> /root/share/agpv_ws/build/navigation/build/lib/navigation
+copying navigation/visual_detector.py -> /root/share/agpv_ws/build/navigation/build/lib/navigation
+copying navigation/alert_handler.py -> /root/share/agpv_ws/build/navigation/build/lib/navigation
+copying navigation/patrol_vehicle.py -> /root/share/agpv_ws/build/navigation/build/lib/navigation
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation
+copying /root/share/agpv_ws/build/navigation/build/lib/navigation/__init__.py -> /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation
+copying /root/share/agpv_ws/build/navigation/build/lib/navigation/visual_detector.py -> /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation
+copying /root/share/agpv_ws/build/navigation/build/lib/navigation/alert_handler.py -> /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation
+copying /root/share/agpv_ws/build/navigation/build/lib/navigation/patrol_vehicle.py -> /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation
+byte-compiling /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation/__init__.py to __init__.cpython-310.pyc
+byte-compiling /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation/visual_detector.py to visual_detector.cpython-310.pyc
+byte-compiling /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation/alert_handler.py to alert_handler.cpython-310.pyc
+byte-compiling /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation/patrol_vehicle.py to patrol_vehicle.cpython-310.pyc
+running install_data
+creating /root/share/agpv_ws/install/navigation/share/ament_index
+creating /root/share/agpv_ws/install/navigation/share/ament_index/resource_index
+creating /root/share/agpv_ws/install/navigation/share/ament_index/resource_index/packages
+copying resource/navigation -> /root/share/agpv_ws/install/navigation/share/ament_index/resource_index/packages
+copying package.xml -> /root/share/agpv_ws/install/navigation/share/navigation
+running install_egg_info
+Copying ../../build/navigation/navigation.egg-info to /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info
+running install_scripts
+Installing alert_handler script to /root/share/agpv_ws/install/navigation/lib/navigation
+Installing patrol_vehicle script to /root/share/agpv_ws/install/navigation/lib/navigation
+Installing visual_detector script to /root/share/agpv_ws/install/navigation/lib/navigation
+writing list of installed files to '/root/share/agpv_ws/build/navigation/install.log'

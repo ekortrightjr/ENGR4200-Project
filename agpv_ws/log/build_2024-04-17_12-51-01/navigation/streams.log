@@ -1,0 +1,47 @@
+[2.558s] Invoking command in '/root/share/agpv_ws/src/navigation': PYTHONPATH=/root/share/agpv_ws/build/navigation/prefix_override:/root/share/agpv_ws/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/navigation build --build-base /root/share/agpv_ws/build/navigation/build install --record /root/share/agpv_ws/build/navigation/install.log --single-version-externally-managed
+[3.255s] running egg_info
+[3.256s] creating ../../build/navigation/navigation.egg-info
+[3.256s] writing ../../build/navigation/navigation.egg-info/PKG-INFO
+[3.257s] writing dependency_links to ../../build/navigation/navigation.egg-info/dependency_links.txt
+[3.257s] writing entry points to ../../build/navigation/navigation.egg-info/entry_points.txt
+[3.257s] writing requirements to ../../build/navigation/navigation.egg-info/requires.txt
+[3.257s] writing top-level names to ../../build/navigation/navigation.egg-info/top_level.txt
+[3.258s] writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[3.260s] reading manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[3.262s] writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[3.262s] running build
+[3.262s] running build_py
+[3.262s] creating /root/share/agpv_ws/build/navigation/build
+[3.262s] creating /root/share/agpv_ws/build/navigation/build/lib
+[3.262s] creating /root/share/agpv_ws/build/navigation/build/lib/navigation
+[3.262s] copying navigation/__init__.py -> /root/share/agpv_ws/build/navigation/build/lib/navigation
+[3.262s] copying navigation/visual_detector.py -> /root/share/agpv_ws/build/navigation/build/lib/navigation
+[3.262s] copying navigation/alert_handler.py -> /root/share/agpv_ws/build/navigation/build/lib/navigation
+[3.263s] copying navigation/patrol_vehicle.py -> /root/share/agpv_ws/build/navigation/build/lib/navigation
+[3.263s] running install
+[3.272s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.273s]   warnings.warn(
+[3.281s] running install_lib
+[3.282s] creating /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation
+[3.282s] copying /root/share/agpv_ws/build/navigation/build/lib/navigation/__init__.py -> /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation
+[3.282s] copying /root/share/agpv_ws/build/navigation/build/lib/navigation/visual_detector.py -> /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation
+[3.282s] copying /root/share/agpv_ws/build/navigation/build/lib/navigation/alert_handler.py -> /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation
+[3.283s] copying /root/share/agpv_ws/build/navigation/build/lib/navigation/patrol_vehicle.py -> /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation
+[3.283s] byte-compiling /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation/__init__.py to __init__.cpython-310.pyc
+[3.283s] byte-compiling /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation/visual_detector.py to visual_detector.cpython-310.pyc
+[3.285s] byte-compiling /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation/alert_handler.py to alert_handler.cpython-310.pyc
+[3.286s] byte-compiling /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation/patrol_vehicle.py to patrol_vehicle.cpython-310.pyc
+[3.287s] running install_data
+[3.290s] creating /root/share/agpv_ws/install/navigation/share/ament_index
+[3.291s] creating /root/share/agpv_ws/install/navigation/share/ament_index/resource_index
+[3.291s] creating /root/share/agpv_ws/install/navigation/share/ament_index/resource_index/packages
+[3.292s] copying resource/navigation -> /root/share/agpv_ws/install/navigation/share/ament_index/resource_index/packages
+[3.292s] copying package.xml -> /root/share/agpv_ws/install/navigation/share/navigation
+[3.292s] running install_egg_info
+[3.298s] Copying ../../build/navigation/navigation.egg-info to /root/share/agpv_ws/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info
+[3.300s] running install_scripts
+[3.368s] Installing alert_handler script to /root/share/agpv_ws/install/navigation/lib/navigation
+[3.368s] Installing patrol_vehicle script to /root/share/agpv_ws/install/navigation/lib/navigation
+[3.368s] Installing visual_detector script to /root/share/agpv_ws/install/navigation/lib/navigation
+[3.368s] writing list of installed files to '/root/share/agpv_ws/build/navigation/install.log'
+[3.533s] Invoked command in '/root/share/agpv_ws/src/navigation' returned '0': PYTHONPATH=/root/share/agpv_ws/build/navigation/prefix_override:/root/share/agpv_ws/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/navigation build --build-base /root/share/agpv_ws/build/navigation/build install --record /root/share/agpv_ws/build/navigation/install.log --single-version-externally-managed

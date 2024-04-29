@@ -1,0 +1,148 @@
+[0.000000] (-) TimerEvent: {}
+[0.000874] (agpv_navigation) JobQueued: {'identifier': 'agpv_navigation', 'dependencies': OrderedDict()}
+[0.001021] (agpv_navigation) JobStarted: {'identifier': 'agpv_navigation'}
+[0.099592] (-) TimerEvent: {}
+[0.149613] (agpv_navigation) JobProgress: {'identifier': 'agpv_navigation', 'progress': 'cmake'}
+[0.149930] (agpv_navigation) Command: {'cmd': ['/usr/bin/cmake', '/root/share/agpv_ws/src/agpv_navigation', '-DCMAKE_INSTALL_PREFIX=/root/share/agpv_ws/install/agpv_navigation'], 'cwd': '/root/share/agpv_ws/build/agpv_navigation', 'env': OrderedDict([('HOSTNAME', 'raspberrypi'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/yahboomcar_ws/install/yahboomcar_msgs/lib:/root/yahboomcar_ws/install/yahboom_web_savmap_interfaces/lib:/root/yahboomcar_ws/install/robot_localization/lib:/root/imu_ws/install/rviz_imu_plugin/lib:/root/imu_ws/install/imu_filter_madgwick/lib:/root/imu_ws/install/imu_complementary_filter/lib:/root/gmapping_ws/install/openslam_gmapping/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/share/agpv_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('COLCON_PREFIX_PATH', '/root/share/agpv_ws/install:/root/yahboomcar_ws/install:/root/imu_ws/install:/root/gmapping_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '20'), ('AMENT_PREFIX_PATH', '/root/share/agpv_ws/install/navigation:/root/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ws/install/yahboomcar_msgs:/root/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ws/install/yahboomcar_base_node:/root/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ws/install/yahboom_web_savmap_interfaces:/root/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ws/install/robot_pose_publisher_ros2:/root/yahboomcar_ws/install/robot_localization:/root/yahboomcar_ws/install/laserscan_to_point_publisher:/root/imu_ws/install/imu_tools:/root/imu_ws/install/rviz_imu_plugin:/root/imu_ws/install/imu_filter_madgwick:/root/imu_ws/install/imu_complementary_filter:/root/gmapping_ws/install/slam_gmapping:/root/gmapping_ws/install/openslam_gmapping:/opt/ros/humble'), ('PWD', '/root/share/agpv_ws/build/agpv_navigation'), ('PYTHONPATH', '/root/share/agpv_ws/install/navigation/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_visual/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_nav/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_multi/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:/root/yahboomcar_ws/install/yahboomcar_mediapipe/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_laser/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_description/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_ctrl/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_bringup/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_astra/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboom_web_savmap_interfaces/local/lib/python3.10/dist-packages:/root/yahboomcar_ws/install/yahboom_app_save_map/lib/python3.10/site-packages:/root/yahboomcar_ws/install/robot_localization/local/lib/python3.10/dist-packages:/root/yahboomcar_ws/install/laserscan_to_point_publisher/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/yahboomcar_ws/install/yahboomcar_msgs:/root/yahboomcar_ws/install/yahboomcar_base_node:/root/yahboomcar_ws/install/yahboom_web_savmap_interfaces:/root/yahboomcar_ws/install/robot_pose_publisher_ros2:/root/yahboomcar_ws/install/robot_localization:/root/imu_ws/install/imu_tools:/root/imu_ws/install/rviz_imu_plugin:/root/imu_ws/install/imu_filter_madgwick:/root/imu_ws/install/imu_complementary_filter:/root/gmapping_ws/install/slam_gmapping:/root/gmapping_ws/install/openslam_gmapping:/root/share/agpv_ws/install/navigation:/root/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ws/install/laserscan_to_point_publisher:/opt/ros/humble')]), 'shell': False}
+[0.199701] (-) TimerEvent: {}
+[0.300071] (-) TimerEvent: {}
+[0.400498] (-) TimerEvent: {}
+[0.500923] (-) TimerEvent: {}
+[0.601361] (-) TimerEvent: {}
+[0.701782] (-) TimerEvent: {}
+[0.802208] (-) TimerEvent: {}
+[0.902672] (-) TimerEvent: {}
+[1.003118] (-) TimerEvent: {}
+[1.103561] (-) TimerEvent: {}
+[1.203987] (-) TimerEvent: {}
+[1.304356] (-) TimerEvent: {}
+[1.404811] (-) TimerEvent: {}
+[1.505271] (-) TimerEvent: {}
+[1.605691] (-) TimerEvent: {}
+[1.706123] (-) TimerEvent: {}
+[1.806552] (-) TimerEvent: {}
+[1.906922] (-) TimerEvent: {}
+[2.007341] (-) TimerEvent: {}
+[2.107724] (-) TimerEvent: {}
+[2.208145] (-) TimerEvent: {}
+[2.308538] (-) TimerEvent: {}
+[2.408885] (-) TimerEvent: {}
+[2.509232] (-) TimerEvent: {}
+[2.579263] (agpv_navigation) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[2.609352] (-) TimerEvent: {}
+[2.709756] (-) TimerEvent: {}
+[2.810295] (-) TimerEvent: {}
+[2.910909] (-) TimerEvent: {}
+[3.011354] (-) TimerEvent: {}
+[3.111766] (-) TimerEvent: {}
+[3.212316] (-) TimerEvent: {}
+[3.279201] (agpv_navigation) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[3.310467] (agpv_navigation) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.312383] (-) TimerEvent: {}
+[3.412907] (-) TimerEvent: {}
+[3.513356] (-) TimerEvent: {}
+[3.526447] (agpv_navigation) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.538381] (agpv_navigation) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.545091] (agpv_navigation) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.548266] (agpv_navigation) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.555766] (agpv_navigation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.613464] (-) TimerEvent: {}
+[3.695325] (agpv_navigation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.705884] (agpv_navigation) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.706194] (agpv_navigation) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.706861] (agpv_navigation) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.713520] (-) TimerEvent: {}
+[3.792881] (agpv_navigation) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.813622] (-) TimerEvent: {}
+[3.914005] (-) TimerEvent: {}
+[4.014396] (-) TimerEvent: {}
+[4.114992] (-) TimerEvent: {}
+[4.171488] (agpv_navigation) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[4.215099] (-) TimerEvent: {}
+[4.315723] (-) TimerEvent: {}
+[4.416204] (-) TimerEvent: {}
+[4.516850] (-) TimerEvent: {}
+[4.617244] (-) TimerEvent: {}
+[4.717680] (-) TimerEvent: {}
+[4.743199] (agpv_navigation) StdoutLine: {'line': b'-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.817785] (-) TimerEvent: {}
+[4.918233] (-) TimerEvent: {}
+[5.018707] (-) TimerEvent: {}
+[5.119193] (-) TimerEvent: {}
+[5.219662] (-) TimerEvent: {}
+[5.222387] (agpv_navigation) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.285588] (agpv_navigation) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.319777] (-) TimerEvent: {}
+[5.349877] (agpv_navigation) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.419895] (-) TimerEvent: {}
+[5.444410] (agpv_navigation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.520016] (-) TimerEvent: {}
+[5.562505] (agpv_navigation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.620131] (-) TimerEvent: {}
+[5.720527] (-) TimerEvent: {}
+[5.821065] (-) TimerEvent: {}
+[5.921467] (-) TimerEvent: {}
+[5.973365] (agpv_navigation) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.002945] (agpv_navigation) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.021593] (-) TimerEvent: {}
+[6.122248] (-) TimerEvent: {}
+[6.222923] (-) TimerEvent: {}
+[6.323537] (-) TimerEvent: {}
+[6.424172] (-) TimerEvent: {}
+[6.524657] (-) TimerEvent: {}
+[6.527809] (agpv_navigation) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.593125] (agpv_navigation) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.624776] (-) TimerEvent: {}
+[6.699755] (agpv_navigation) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.724914] (-) TimerEvent: {}
+[6.795479] (agpv_navigation) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.825078] (-) TimerEvent: {}
+[6.925686] (-) TimerEvent: {}
+[6.960991] (agpv_navigation) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.961518] (agpv_navigation) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.025819] (-) TimerEvent: {}
+[7.084188] (agpv_navigation) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[7.085489] (agpv_navigation) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.125924] (-) TimerEvent: {}
+[7.226539] (-) TimerEvent: {}
+[7.327065] (-) TimerEvent: {}
+[7.427412] (-) TimerEvent: {}
+[7.527750] (-) TimerEvent: {}
+[7.555735] (agpv_navigation) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[7.627868] (-) TimerEvent: {}
+[7.728289] (-) TimerEvent: {}
+[7.828642] (-) TimerEvent: {}
+[7.884067] (agpv_navigation) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.890294] (agpv_navigation) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.896469] (agpv_navigation) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.902581] (agpv_navigation) StdoutLine: {'line': b'-- Generating done\n'}
+[7.904748] (agpv_navigation) StdoutLine: {'line': b'-- Build files have been written to: /root/share/agpv_ws/build/agpv_navigation\n'}
+[7.919204] (agpv_navigation) CommandEnded: {'returncode': 0}
+[7.919974] (agpv_navigation) JobProgress: {'identifier': 'agpv_navigation', 'progress': 'build'}
+[7.920865] (agpv_navigation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/share/agpv_ws/build/agpv_navigation', '--', '-j4', '-l4'], 'cwd': '/root/share/agpv_ws/build/agpv_navigation', 'env': OrderedDict([('HOSTNAME', 'raspberrypi'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/yahboomcar_ws/install/yahboomcar_msgs/lib:/root/yahboomcar_ws/install/yahboom_web_savmap_interfaces/lib:/root/yahboomcar_ws/install/robot_localization/lib:/root/imu_ws/install/rviz_imu_plugin/lib:/root/imu_ws/install/imu_filter_madgwick/lib:/root/imu_ws/install/imu_complementary_filter/lib:/root/gmapping_ws/install/openslam_gmapping/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/share/agpv_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('COLCON_PREFIX_PATH', '/root/share/agpv_ws/install:/root/yahboomcar_ws/install:/root/imu_ws/install:/root/gmapping_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '20'), ('AMENT_PREFIX_PATH', '/root/share/agpv_ws/install/navigation:/root/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ws/install/yahboomcar_msgs:/root/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ws/install/yahboomcar_base_node:/root/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ws/install/yahboom_web_savmap_interfaces:/root/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ws/install/robot_pose_publisher_ros2:/root/yahboomcar_ws/install/robot_localization:/root/yahboomcar_ws/install/laserscan_to_point_publisher:/root/imu_ws/install/imu_tools:/root/imu_ws/install/rviz_imu_plugin:/root/imu_ws/install/imu_filter_madgwick:/root/imu_ws/install/imu_complementary_filter:/root/gmapping_ws/install/slam_gmapping:/root/gmapping_ws/install/openslam_gmapping:/opt/ros/humble'), ('PWD', '/root/share/agpv_ws/build/agpv_navigation'), ('PYTHONPATH', '/root/share/agpv_ws/install/navigation/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_visual/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_nav/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_multi/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:/root/yahboomcar_ws/install/yahboomcar_mediapipe/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_laser/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_description/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_ctrl/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_bringup/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_astra/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboom_web_savmap_interfaces/local/lib/python3.10/dist-packages:/root/yahboomcar_ws/install/yahboom_app_save_map/lib/python3.10/site-packages:/root/yahboomcar_ws/install/robot_localization/local/lib/python3.10/dist-packages:/root/yahboomcar_ws/install/laserscan_to_point_publisher/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/yahboomcar_ws/install/yahboomcar_msgs:/root/yahboomcar_ws/install/yahboomcar_base_node:/root/yahboomcar_ws/install/yahboom_web_savmap_interfaces:/root/yahboomcar_ws/install/robot_pose_publisher_ros2:/root/yahboomcar_ws/install/robot_localization:/root/imu_ws/install/imu_tools:/root/imu_ws/install/rviz_imu_plugin:/root/imu_ws/install/imu_filter_madgwick:/root/imu_ws/install/imu_complementary_filter:/root/gmapping_ws/install/slam_gmapping:/root/gmapping_ws/install/openslam_gmapping:/root/share/agpv_ws/install/navigation:/root/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ws/install/laserscan_to_point_publisher:/opt/ros/humble')]), 'shell': False}
+[7.928824] (-) TimerEvent: {}
+[7.980143] (agpv_navigation) CommandEnded: {'returncode': 0}
+[8.008347] (agpv_navigation) JobProgress: {'identifier': 'agpv_navigation', 'progress': 'install'}
+[8.020686] (agpv_navigation) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/share/agpv_ws/build/agpv_navigation'], 'cwd': '/root/share/agpv_ws/build/agpv_navigation', 'env': OrderedDict([('HOSTNAME', 'raspberrypi'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/yahboomcar_ws/install/yahboomcar_msgs/lib:/root/yahboomcar_ws/install/yahboom_web_savmap_interfaces/lib:/root/yahboomcar_ws/install/robot_localization/lib:/root/imu_ws/install/rviz_imu_plugin/lib:/root/imu_ws/install/imu_filter_madgwick/lib:/root/imu_ws/install/imu_complementary_filter/lib:/root/gmapping_ws/install/openslam_gmapping/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/share/agpv_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('COLCON_PREFIX_PATH', '/root/share/agpv_ws/install:/root/yahboomcar_ws/install:/root/imu_ws/install:/root/gmapping_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '20'), ('AMENT_PREFIX_PATH', '/root/share/agpv_ws/install/navigation:/root/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ws/install/yahboomcar_msgs:/root/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ws/install/yahboomcar_base_node:/root/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ws/install/yahboom_web_savmap_interfaces:/root/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ws/install/robot_pose_publisher_ros2:/root/yahboomcar_ws/install/robot_localization:/root/yahboomcar_ws/install/laserscan_to_point_publisher:/root/imu_ws/install/imu_tools:/root/imu_ws/install/rviz_imu_plugin:/root/imu_ws/install/imu_filter_madgwick:/root/imu_ws/install/imu_complementary_filter:/root/gmapping_ws/install/slam_gmapping:/root/gmapping_ws/install/openslam_gmapping:/opt/ros/humble'), ('PWD', '/root/share/agpv_ws/build/agpv_navigation'), ('PYTHONPATH', '/root/share/agpv_ws/install/navigation/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_visual/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_nav/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_multi/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_msgs/local/lib/python3.10/dist-packages:/root/yahboomcar_ws/install/yahboomcar_mediapipe/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_laser/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_description/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_ctrl/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_bringup/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboomcar_astra/lib/python3.10/site-packages:/root/yahboomcar_ws/install/yahboom_web_savmap_interfaces/local/lib/python3.10/dist-packages:/root/yahboomcar_ws/install/yahboom_app_save_map/lib/python3.10/site-packages:/root/yahboomcar_ws/install/robot_localization/local/lib/python3.10/dist-packages:/root/yahboomcar_ws/install/laserscan_to_point_publisher/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/yahboomcar_ws/install/yahboomcar_msgs:/root/yahboomcar_ws/install/yahboomcar_base_node:/root/yahboomcar_ws/install/yahboom_web_savmap_interfaces:/root/yahboomcar_ws/install/robot_pose_publisher_ros2:/root/yahboomcar_ws/install/robot_localization:/root/imu_ws/install/imu_tools:/root/imu_ws/install/rviz_imu_plugin:/root/imu_ws/install/imu_filter_madgwick:/root/imu_ws/install/imu_complementary_filter:/root/gmapping_ws/install/slam_gmapping:/root/gmapping_ws/install/openslam_gmapping:/root/share/agpv_ws/install/navigation:/root/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ws/install/laserscan_to_point_publisher:/opt/ros/humble')]), 'shell': False}
+[8.028937] (-) TimerEvent: {}
+[8.033055] (agpv_navigation) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.033376] (agpv_navigation) StdoutLine: {'line': b'-- Installing: /root/share/agpv_ws/install/agpv_navigation/share/ament_index/resource_index/package_run_dependencies/agpv_navigation\n'}
+[8.033613] (agpv_navigation) StdoutLine: {'line': b'-- Installing: /root/share/agpv_ws/install/agpv_navigation/share/ament_index/resource_index/parent_prefix_path/agpv_navigation\n'}
+[8.033878] (agpv_navigation) StdoutLine: {'line': b'-- Installing: /root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/environment/ament_prefix_path.sh\n'}
+[8.034096] (agpv_navigation) StdoutLine: {'line': b'-- Installing: /root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/environment/ament_prefix_path.dsv\n'}
+[8.034297] (agpv_navigation) StdoutLine: {'line': b'-- Installing: /root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/environment/path.sh\n'}
+[8.034495] (agpv_navigation) StdoutLine: {'line': b'-- Installing: /root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/environment/path.dsv\n'}
+[8.034707] (agpv_navigation) StdoutLine: {'line': b'-- Installing: /root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/local_setup.bash\n'}
+[8.034919] (agpv_navigation) StdoutLine: {'line': b'-- Installing: /root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/local_setup.sh\n'}
+[8.035123] (agpv_navigation) StdoutLine: {'line': b'-- Installing: /root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/local_setup.zsh\n'}
+[8.035328] (agpv_navigation) StdoutLine: {'line': b'-- Installing: /root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/local_setup.dsv\n'}
+[8.035520] (agpv_navigation) StdoutLine: {'line': b'-- Installing: /root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/package.dsv\n'}
+[8.041367] (agpv_navigation) StdoutLine: {'line': b'-- Installing: /root/share/agpv_ws/install/agpv_navigation/share/ament_index/resource_index/packages/agpv_navigation\n'}
+[8.041628] (agpv_navigation) StdoutLine: {'line': b'-- Installing: /root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/cmake/agpv_navigationConfig.cmake\n'}
+[8.041807] (agpv_navigation) StdoutLine: {'line': b'-- Installing: /root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/cmake/agpv_navigationConfig-version.cmake\n'}
+[8.042006] (agpv_navigation) StdoutLine: {'line': b'-- Installing: /root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/package.xml\n'}
+[8.043788] (agpv_navigation) CommandEnded: {'returncode': 0}
+[8.129072] (-) TimerEvent: {}
+[8.229795] (-) TimerEvent: {}
+[8.294033] (agpv_navigation) JobEnded: {'identifier': 'agpv_navigation', 'rc': 0}
+[8.295115] (-) EventReactorShutdown: {}

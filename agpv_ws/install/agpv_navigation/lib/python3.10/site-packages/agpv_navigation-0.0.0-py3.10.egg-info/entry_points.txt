@@ -1,0 +1,5 @@
+[console_scripts]
+alert_handler = agpv_navigation.alert_handler:main
+patrol_vehicle = agpv_navigation.patrol_vehicle:main
+visual_detector = agpv_navigation.visual_detector:main
+

@@ -1,0 +1,15 @@
+/root/share/agpv_ws/install/agpv_navigation/share/ament_index/resource_index/package_run_dependencies/agpv_navigation
+/root/share/agpv_ws/install/agpv_navigation/share/ament_index/resource_index/parent_prefix_path/agpv_navigation
+/root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/environment/ament_prefix_path.sh
+/root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/environment/ament_prefix_path.dsv
+/root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/environment/path.sh
+/root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/environment/path.dsv
+/root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/local_setup.bash
+/root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/local_setup.sh
+/root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/local_setup.zsh
+/root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/local_setup.dsv
+/root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/package.dsv
+/root/share/agpv_ws/install/agpv_navigation/share/ament_index/resource_index/packages/agpv_navigation
+/root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/cmake/agpv_navigationConfig.cmake
+/root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/cmake/agpv_navigationConfig-version.cmake
+/root/share/agpv_ws/install/agpv_navigation/share/agpv_navigation/package.xml

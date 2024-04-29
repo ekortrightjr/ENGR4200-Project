@@ -1,0 +1,4 @@
+source;share/agpv_navigation/local_setup.bash
+source;share/agpv_navigation/local_setup.dsv
+source;share/agpv_navigation/local_setup.sh
+source;share/agpv_navigation/local_setup.zsh
