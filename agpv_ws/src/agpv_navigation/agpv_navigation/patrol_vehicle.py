@@ -19,44 +19,6 @@ class PatrolVehicle(Node):
             10)
         self.state = "Idle"
 
-        # # Create a client for the 'set_parameters' service of the 'global_costmap/global_costmap' node
-        # global_costmap_client = self.create_client(SetParameters, '/global_costmap/global_costmap/set_parameters')
-        
-        # # Create a request to set the 'inflation_layer.inflation_radius' and 'width' parameters
-        # global_costmap_req = SetParameters.Request()
-        # global_costmap_req.parameters = [Parameter(name='inflation_layer.inflation_radius', 
-        #                                            value=ParameterValue(double_value=0.15)),
-        #                                  Parameter(name='width', 
-        #                                            value=ParameterValue(integer_value=3))]
-
-        # # Send the request and wait for the response
-        # global_costmap_future = global_costmap_client.call_async(global_costmap_req)
-        # rclpy.spin_until_future_complete(self, global_costmap_future)
-
-        # if global_costmap_future.result() is not None:
-        #     print('Global costmap parameters set successfully')
-        # else:
-        #     print('Failed to set global costmap parameters')
-
-        # # Create a client for the 'set_parameters' service of the 'local_costmap/local_costmap' node
-        # local_costmap_client = self.create_client(SetParameters, '/local_costmap/local_costmap/set_parameters')
-
-        # # Create a request to set the 'inflation_layer.inflation_radius' and 'width' parameters
-        # local_costmap_req = SetParameters.Request()
-        # local_costmap_req.parameters = [Parameter(name='inflation_layer.inflation_radius', 
-        #                                           value=ParameterValue(double_value=0.15)),
-        #                                 Parameter(name='width', 
-        #                                           value=ParameterValue(integer_value=2))]
-
-        # # Send the request and wait for the response
-        # local_costmap_future = local_costmap_client.call_async(local_costmap_req)
-        # rclpy.spin_until_future_complete(self, local_costmap_future)
-
-        # if local_costmap_future.result() is not None:
-        #     print('Local costmap parameters set successfully')
-        # else:
-        #     print('Failed to set local costmap parameters')
-
         print('__init__ complete')
 
     def listener_callback(self, msg):
@@ -74,48 +36,48 @@ class PatrolVehicle(Node):
       print("patrol()")
       nav = BasicNavigator()
 
-      # # create initial pose
-      # initial_pose = get_pose_stampted(nav=nav, p={"x": -0.0321, "y": -0.0403}, a=0.0490)
-      # nav.setInitialPose(initial_pose)
+      # create initial pose
+      initial_pose = get_pose_stampted(nav=nav, p={"x": -0.0321, "y": -0.0403}, a=0.0490)
+      nav.setInitialPose(initial_pose)
       
-      # # wait for mav2
-      # nav.waitUntilNav2Active()
-      # time.sleep(5)
+      # wait for mav2
+      nav.waitUntilNav2Active()
+      time.sleep(5)
 
-      # # Go to Station 1
-      # goal_pose = get_pose_stampted(nav=nav, p={"x": 1.6089, "y": -0.4549}, a=0.0494)
-      # nav.goToPose(goal_pose)
+      # Go to Station 1
+      goal_pose = get_pose_stampted(nav=nav, p={"x": 1.6089, "y": -0.4549}, a=0.0494)
+      nav.goToPose(goal_pose)
 
-      # # wait for task to be completed
-      # while not nav.isTaskComplete():
-      #     feedback = nav.getFeedback()
-      #     print(feedback)
+      # wait for task to be completed
+      while not nav.isTaskComplete():
+          feedback = nav.getFeedback()
+          print(feedback)
 
-      # print("On to second station!")
-      # time.sleep(10)
+      print("On to second station!")
+      time.sleep(10)
 
-      # # Go to Station 2
-      # goal_pose = get_pose_stampted(nav=nav, p={"x": 1.3664, "y": 0.1324}, a=1.5419)
-      # nav.goToPose(goal_pose)
+      # Go to Station 2
+      goal_pose = get_pose_stampted(nav=nav, p={"x": 1.3664, "y": 0.1324}, a=1.5419)
+      nav.goToPose(goal_pose)
 
-      # # wait for task to be completed
-      # while not nav.isTaskComplete():
-      #     feedback = nav.getFeedback()
-      #     print(feedback)
+      # wait for task to be completed
+      while not nav.isTaskComplete():
+          feedback = nav.getFeedback()
+          print(feedback)
 
-      # print("Back to base!")
-      # time.sleep(10)
+      print("Back to base!")
+      time.sleep(10)
 
-      # # Go back to base
-      # nav.goToPose(initial_pose)
+      # Go back to base
+      nav.goToPose(initial_pose)
 
-      # # wait for task to be completed
-      # while not nav.isTaskComplete():
-      #     feedback = nav.getFeedback()
-      #     print(feedback)
+      # wait for task to be completed
+      while not nav.isTaskComplete():
+          feedback = nav.getFeedback()
+          print(feedback)
 
-      # print(nav.getResult())
-      # time.sleep(5)
+      print(nav.getResult())
+      time.sleep(5)
       print("end patrol()")
 
 

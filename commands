@@ -46,10 +46,10 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:
 
 ### PHYSICAL ROBOT
 # Not sure this is needed
-export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
-sudo apt install ros-humble-rmw-cyclonedds-cpp
-sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup
-sudo apt install ros-humble-slam-toolbox
+# export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+# sudo apt install ros-humble-rmw-cyclonedds-cpp
+# sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup
+# sudo apt install ros-humble-slam-toolbox
 
 To create map of physical world:
 # Connect to Micro-ROS WiFi on laptop
@@ -64,8 +64,8 @@ ros2 launch yahboomcar_nav save_map_launch.py
 # copy the generated map to permanent storage
 cp /root/yahboomcar_ws/src/yahboomcar_nav/maps/yahboom_map.* /root/share
 
-In a separate terminal, I am able to see the topic /scan
-publishing a message of type sensor_msgs/msg/LaserScan
+# In a separate terminal, I am able to see the topic /scan
+# publishing a message of type sensor_msgs/msg/LaserScan
 
 To navigate:
 # copy the permanent map
@@ -93,6 +93,10 @@ python3 /root/share/nodes/alert_handler.py &
 python3 /root/share/nodes/patrol_vehicle.py
 #### END ####
 
+# New ways of starting nodes:
+ros2 run agpv_navigation visual_detector &
+ros2 run agpv_navigation alert_handler &
+ros2 run agpv navigation patrol_vehicle
 
 
 
